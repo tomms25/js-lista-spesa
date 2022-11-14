@@ -2,7 +2,7 @@
 
 let listaSpesa = [],
 
-let item = false
+let object = false
 
 let listObject = prompt ("Inserisci elementi da aggiungere alla lista")
 
