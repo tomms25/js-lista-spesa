@@ -1,22 +1,33 @@
 // Data una lista della spesa, stampare sulla pagina gli elementi della lista individualmente con un ciclo for che poi commentate, e poi fate lo stesso con il while (che lasciate attivo).
 
-let listaSpesa = [],
+let listaSpesa = ["pane", "latte", "affettati", "cereali", "farina", "pasta"];
 
-let object = false
+console.log(listaSpesa.length);
 
-let listObject = prompt ("Inserisci elementi da aggiungere alla lista")
 
-for (let i = 0;   ; i++){
-    console.log(i)
-    if (listObject == listaSpesa [i]){
-        object = true;
-    }
 
+
+// for (i = 0; i < listaSpesa.length; i++){
+//     // let lista = document.getElementById("lista-spesa")
+//     let oggetto = document.createElement("li");
+//     document.getElementById("lista").appendChild(oggetto);
+//     oggetto.innerText = (listaSpesa[i]);
+    
+// }
+
+
+let i = 0;
+while (i < listaSpesa.length){
+
+    // copio il contenuto come nel for
+    let oggetto = document.createElement("li");
+    document.getElementById("lista").appendChild(oggetto);
+    oggetto.innerText = (listaSpesa[i]);
+
+
+    // Devo inserire l'incremento 
+    i++;
 }
 
-// Da riportare in pagina
 
-if (object == true){
-    document.getElementById ("element").innerHTML = listObject
-} 
-  
+
